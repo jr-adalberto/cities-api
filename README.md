@@ -4,6 +4,7 @@ Construindo uma API Rest de Consulta de Cidades do Brasil do Zero até a Produç
 
 
 Cities API
+
 Requirements
 Linux
 Git
@@ -13,10 +14,15 @@ IntelliJ Community
 Heroku CLI
 DataBase
 Postgres
+
+
 Postgres Docker Hub
+
 docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city -e POSTGRES_PASSWORD=super_password -e POSTGRES_DB=cities postgres
 Populate
+
 data
+
 cd ~/workspace/sql-paises-estados-cidades/PostgreSQL
 
 docker run -it --rm --net=host -v $PWD:/tmp postgres /bin/bash
